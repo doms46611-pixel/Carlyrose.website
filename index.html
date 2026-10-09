@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Little Tastey - My Profile</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #213d60;
+}
+
+.profile {
+  width: min(100%, 600px);
+  margin: 0 auto;
+  padding: 38px 18px;
+  text-align: center;
+}
+
+/* Profile photo */
+.avatar {
+  display: block;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #eeeeee;
+}
+
+/* Clickable images */
+.clickable-photo {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Profile name */
+h1 {
+  font-size: 27px;
+  margin: 22px 0 10px;
+  color: #34345e;
+}
+
+.verified {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4285f4;
+  color: white;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+/* Stars */
+.stars {
+  color: #ffb51b;
+  font-size: 27px;
+  letter-spacing: 3px;
+  margin: 12px 0;
+}
+
+/* Video and photo counts */
+.stats {
+  color: #c34d79;
+  font-size: 19px;
+  font-weight: bold;
+  margin: 18px 0 75px;
+}
+
+/* Buttons */
+.actions {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.actions a {
+  display: block;
+  width: 100%;
+  padding: 20px 12px;
+  border-radius: 40px;
+  background: linear-gradient(
+    110deg,
+    #2879ac,
+    #173d63
+  );
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Button hover effect */
+.actions a:hover {
+  opacity: 0.9;
+}
+
+/* Photo gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 45px;
+  color: #999999;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #999999;
+  text-decoration: none;
+}
+
+/* Mobile screen */
+@media (max-width: 380px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .stats {
+    font-size: 16px;
+  }
+
+  .profile {
+    padding: 28px 14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main class="profile">
+
+  <!-- Profile photo: opens your website -->
+  <a
+    class="clickable-photo"
+    href="https://www.tiktok.com/@carly_rose04?_r=1&_t=ZS-9AP8AwyoTo8/"
+  >
+    <img
+      class="avatar"
+      src="carlyrose/i1.jpeg"
+      alt="Profile picture"
+    >
+  </a>
+
+  <!-- Profile name and verification badge -->
+  <h1>
+    CARLY ROSE 🇺🇸
+    <span class="verified">✓</span>
+  </h1>
+
+  <!-- Rating stars -->
+  <div class="stars">★★★★★</div>
+
+  <!-- Profile statistics -->
+  <div class="stats">
+    🎬 331 videos &nbsp; 🖼️ 498 photos
+  </div>
+
+  <!-- Website buttons -->
+  <div class="actions">
+
+    <a href="https://www.tiktok.com/@carly_rose04?_r=1&_t=ZS-9AP8AwyoTo8/">
+      ▶ Livestream
+    </a>
+
+    <a href="https://www.tiktok.com/@carly_rose04?_r=1&_t=ZS-9AP8AwyoTo8/">
+      🔒 View Content
+    </a>
+
+  </div>
+
+  <!-- Gallery: every photo opens your website -->
+  <section class="gallery" id="gallery">
+
+    <a
+      class="clickable-photo"
+      href="https://www.tiktok.com/@carly_rose04?_r=1&_t=ZS-9AP8AwyoTo8/"
+    >
+      <img
+        src="carlyrose/i4.jpeg"
+        alt="Gallery photo 1"
+      >
+    </a>
+
+    <a
+      class="clickable-photo"
+      href="https://www.tiktok.com/@carly_rose04?_r=1&_t=ZS-9AP8AwyoTo8/"
+    >
+      <img
+        src="carlyrose/i3.jpeg"
+        alt="Gallery photo 2"
+      >
+    </a>
+
+    <a
+      class="clickable-photo"
+      href="https://www.tiktok.com/@carly_rose04?_r=1&_t=ZS-9AP8AwyoTo8/"
+    >
+      <img
+        src="carlyrose/i2.jpeg"
+        alt="Gallery photo 3"
+      >
+    </a>
+
+    <a
+      class="clickable-photo"
+      href="https://www.tiktok.com/@carly_rose04?_r=1&_t=ZS-9AP8AwyoTo8/"
+    >
+      <img
+        src="carlyrose/i6.jpeg"
+        alt="Gallery photo 4"
+      >
+    </a>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="/dmca.html">DMCA</a>
+  </footer>
+
+</main>
+
+</body>
+</html>
